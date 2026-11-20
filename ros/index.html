@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ROS_v0_4 | Realm Operating System</title>
+
+<style>
+
+:root{
+ --gold:#D4AF37;
+ --goldBright:#FFD96B;
+ --cyan:#5EE9FF;
+ --violet:#7B61FF;
+ --space:#050816;
+ --panel:rgba(8,15,35,.72);
+}
+
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+
+body{
+ overflow:hidden;
+ background:#000;
+ color:white;
+ font-family:Segoe UI, sans-serif;
+}
+
+#boot{
+ position:fixed;
+ inset:0;
+ background:black;
+ z-index:9999;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ flex-direction:column;
+ color:var(--cyan);
+ font-family:Consolas,monospace;
+ letter-spacing:2px;
+}
+
+#bootText{
+ font-size:14px;
+ opacity:.9;
+}
+
+#universe{
+ position:fixed;
+ inset:0;
+
+ background:
+ radial-gradient(circle at 50% 50%,
+ #162550 0%,
+ #09142c 25%,
+ #050816 65%,
+ #02040c 100%);
+}
+
+/* =========================
+CANVAS
+========================= */
+
+canvas{
+ position:absolute;
+ inset:0;
+ width:100%;
+ height:100%;
+}
 
